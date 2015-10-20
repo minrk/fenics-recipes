@@ -20,7 +20,6 @@ requirements:
     - swig ==3.0.7
     - numpy
     - vtk
-    - qt
     - ffc ==1.6.0
     - ply
     - boost
@@ -36,7 +35,6 @@ requirements:
     - swig ==3.0.7
     - numpy
     - vtk
-    - qt
     - ffc ==1.6.0
     - ufl ==1.6.0
     - ply
