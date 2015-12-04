@@ -1,0 +1,4 @@
+#!/bin/sh
+
+PKG="$1"
+conda install -y -c $CHANNEL $1$2 --use-local || conda build -c $CHANNEL --use-local $1

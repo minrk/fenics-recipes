@@ -13,27 +13,31 @@ RUN bash ./Miniconda-latest-Linux-x86_64.sh -b -p /opt/conda
 ENV PATH /opt/conda/bin:$PATH
 RUN conda install -y conda-build jinja2 mpi4py mkl
 
+ENV CHANNEL minrk
+ENV VERSION 1.6.0
+ADD install_or_build /usr/local/bin/install_or_build
+
 ADD eigen3 eigen3
-RUN conda build eigen3
+RUN install_or_build eigen3
 ADD petsc petsc
-RUN conda build petsc
+RUN install_or_build petsc
 ADD petsc4py petsc4py
-RUN conda build petsc4py
+RUN install_or_build petsc4py
 ADD slepc slepc
-RUN conda build slepc
+RUN install_or_build slepc
 ADD instant instant
-RUN conda build instant
+RUN install_or_build instant ==$VERSION
 ADD ufl ufl
-RUN conda build ufl
+RUN install_or_build ufl ==$VERSION
 ADD fiat fiat
-RUN conda build fiat
+RUN install_or_build fiat ==$VERSION
 ADD swig swig
-RUN conda build swig
+RUN install_or_build swig
 ADD ffc ffc
-RUN conda build ffc
+RUN install_or_build ffc ==$VERSION
 ADD dolfin dolfin
-RUN conda build dolfin
+RUN install_or_build dolfin ==$VERSION
 ADD mshr mshr
-RUN conda build mshr
+RUN install_or_build mshr ==$VERSION
 ADD fenics fenics
-RUN conda build fenics
+RUN install_or_build fenics ==$VERSION
