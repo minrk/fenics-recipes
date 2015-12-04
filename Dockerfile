@@ -33,5 +33,7 @@ ADD ffc ffc
 RUN conda build ffc
 ADD dolfin dolfin
 RUN conda build dolfin
+ADD mshr mshr
+RUN conda build mshr
 ADD fenics fenics
 RUN conda build fenics

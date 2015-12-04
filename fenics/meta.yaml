@@ -4,6 +4,7 @@ package:
 
 requirements:
   run:
+    - mshr ==1.6.0
     - dolfin ==1.6.0
     - ffc ==1.6.0
     - fiat ==1.6.0
