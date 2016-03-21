@@ -1,14 +1,10 @@
 package:
   name: ffc
-  version: "1.6.0"
+  version: "1.7.0dev"
 
 source:
-  fn: ffc-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.6.0.tar.gz
-  md5: 358faa3e9da62a1b1a717070217b793e
-
-build:
-  number: 2
+  git_url: https://bitbucket.org/fenics-project/ffc.git
+  git_tag: master
 
 requirements:
   build:
@@ -20,9 +16,9 @@ requirements:
     - python
     - numpy
     - swig ==3.0.7
-    - ufl ==1.6.0
-    - fiat ==1.6.0
-    - instant ==1.6.0
+    - ufl ==1.7.0dev
+    - fiat ==1.7.0dev
+    - instant ==1.7.0dev
 
 test:
   imports:

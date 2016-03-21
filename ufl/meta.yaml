@@ -1,22 +1,21 @@
 package:
   name: ufl
-  version: "1.6.0"
+  version: "1.7.0dev"
 
 source:
-  fn: ufl-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/ufl/downloads/ufl-1.6.0.tar.gz
-  md5: c40c5f04eaa847377ab2323122284016
+  git_url: https://bitbucket.org/fenics-project/ufl.git
+  git_tag: master
 
-build:
-  number: 1
 
 requirements:
   build:
     - python
+    - six
 
   run:
     - python
     - six
+    - numpy
 
 test:
   imports:

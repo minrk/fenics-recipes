@@ -1,15 +1,15 @@
 package:
   name: fenics
-  version: "1.6.0"
+  version: "1.7.0dev"
 
 requirements:
   run:
-    - mshr ==1.6.0
-    - dolfin ==1.6.0
-    - ffc ==1.6.0
-    - fiat ==1.6.0
-    - ufl ==1.6.0
-    - instant ==1.6.0
+    - mshr ==1.7.0dev
+    - dolfin ==1.7.0dev
+    - ffc ==1.7.0dev
+    - fiat ==1.7.0dev
+    - ufl ==1.7.0dev
+    - instant ==1.7.0dev
 
 about:
   home: http://www.fenicsproject.org

@@ -1,14 +1,14 @@
 package:
   name: dolfin
-  version: "1.6.0"
+  version: "1.7.0dev"
 
 source:
-  fn: dolfin-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
-  md5: 35cb4baf7ab4152a40fb7310b34d5800
+  git_url: https://bitbucket.org/fenics-project/dolfin.git
+  git_tag: master
 
 build:
-  number: 2
+  # features:
+  #   - nox
 
 requirements:
   build:
@@ -19,8 +19,8 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy
-    - vtk
-    - ffc ==1.6.0
+    - vtk-nox
+    - ffc ==1.7.0dev
     - ply
     - boost
     - eigen3
@@ -34,9 +34,9 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy
-    - vtk
-    - ffc ==1.6.0
-    - ufl ==1.6.0
+    - vtk-nox
+    - ffc ==1.7.0dev
+    - ufl ==1.7.0dev
     - ply
     - boost
     - eigen3

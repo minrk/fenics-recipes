@@ -6,8 +6,6 @@ cmake \
   -DCMAKE_LIBRARY_PATH=$LIBRARY_PATH \
   -DENABLE_TESTS=1 \
   .
-make
-make install
 
-cd $SRC_DIR
-make test
+make -j${CPU_COUNT}
+make install

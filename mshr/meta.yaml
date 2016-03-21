@@ -1,26 +1,22 @@
 package:
   name: mshr
-  version: "1.6.0"
+  version: "1.7.0dev"
 
 source:
-  fn: mshr-1.6.0.tar.gz
-  url: https://bitbucket.org/fenics-project/mshr/downloads/mshr-1.6.0.tar.gz
-  md5: 44160cccb8a006be27c8d9c33af6a397
-
-build:
-  number: 1
+  git_url: https://bitbucket.org/fenics-project/mshr.git
+  git_tag: master
 
 requirements:
   build:
     - python
     - cmake
-    - dolfin
+    - dolfin ==1.7.0dev
     - gmp
     - mpfr
 
   run:
     - python
-    - dolfin
+    - dolfin ==1.7.0dev
     - gmp
     - mpfr
 
