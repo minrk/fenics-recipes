@@ -33,6 +33,7 @@ requirements:
     - mkl
     - libxml2
     - swig ==3.0.7
+    - cmake
     - numpy
     - vtk-nox
     - ffc ==1.7.0dev
